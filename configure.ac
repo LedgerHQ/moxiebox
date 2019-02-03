@@ -38,7 +38,6 @@ AC_SUBST(MOX_GCC)
 AC_CONFIG_FILES([
 	Makefile
 	runtime/Makefile
-	src/Makefile
-	tests/Makefile])
+	src/Makefile])
 AC_OUTPUT
 
