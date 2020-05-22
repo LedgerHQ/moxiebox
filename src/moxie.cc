@@ -526,8 +526,7 @@ sim_resume (machine& mach, unsigned long long cpu_budget)
 		int b = inst & 0xf;
 		unsigned av = cpu.asregs.regs[a];
 		unsigned bv = cpu.asregs.regs[b];
-		signed long long r = 
-		  (signed long long) av * (signed long long) bv;
+		signed long long r = (signed) av * (signed) bv;
 
 		TRACE("mul.x");
 		cpu.asregs.regs[a] = r >> 32;
